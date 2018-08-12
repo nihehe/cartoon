@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+html body{
+    width: 100%;
+    height: 100%;
+    background: mediumpurple;
+    position: relative;
+}
+.first{
+    width: 200px;
+    height: 300px;
+    background: green;
+    animation: first 2s forwards;
+    position: absolute;
+    top: 70px;
+    left:100px;
+}
+.second{
+    width: 300px;
+    height: 200px;
+    background: green;
+    position: absolute;
+    top: 70px;
+    left:530px;
+    animation: second 2s forwards;
+}
+.third{
+    width: 200px;
+    height: 400px;
+    background: green;
+    position: absolute;
+    top: 70px;
+    left:500px;
+    animation: third 1s forwards;
+}
+@keyframes first{
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(100px);
+        background: palegreen;
+    }
+}
+@keyframes second{
+    0%{
+        transform: translateY(-200px);
+    }
+    100%{
+        transform: translateY(300px);
+        background: palegreen;
+    }
+}
+@keyframes third{
+    0%{
+        transform: translateX(2000px);
+    }
+    100%{
+        transform: translateX(500px);
+        background: palegreen;
+    }
+}
